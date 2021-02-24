@@ -23,3 +23,49 @@ public class ExerciseCond3
         }
     }
 }
+
+/*
+22. Write a program in C# Sharp to read any Month Number in integer and display Month name in the word. Go to the editor
+Test Data :
+4
+Expected Output:
+April
+*/
+using System;
+public class ExerciseCond3
+{
+    public static void Main( )
+    {   
+        int mois = System.Convert.ToInt32(System.Console.ReadLine());
+        
+        switch (mois) 
+        {
+            case 1:
+                Console.WriteLine("Janvier");
+                break;
+            case 2:
+                Console.WriteLine("Fevrier");
+                break;
+            case 3:
+                Console.WriteLine("Mars");
+                break;
+            case 4:
+                Console.WriteLine("Avril");
+                break;
+            case 5:
+                Console.WriteLine("Mai");
+                break;
+            case 6:
+                Console.WriteLine("Juin");
+                break;
+            case 7:
+                Console.WriteLine("Juillet");
+                break;
+            /* etc....... */
+            default:
+                Console.WriteLine("Mettre un mois");
+                break;
+        }
+    }
+}
+
