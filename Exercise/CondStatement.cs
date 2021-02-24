@@ -31,7 +31,7 @@ Test Data :
 Expected Output:
 April
 */
-using System; /* Avec switch
+using System; /* Avec switch */
 public class ExerciseCond3
 {
     public static void Main( )
