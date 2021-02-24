@@ -80,3 +80,39 @@ public class LoopExercise11
          }
     }
 }
+
+/*
+36. Write a program in C# Sharp to display the such a pattern for n number of rows using a number which will start with the number 1 and the first and a last number of each row will be 1. Go to the editor
+*/
+using System;  
+public class LoopExercice36
+{  
+    public static void Main()
+{
+   int n = Convert.ToInt32(Console.ReadLine());
+   string ligne = "";
+   
+   for(int i=0;i<=n;i++)
+   {
+       
+        /* Mettre espaces blancs*/
+        for(int j=1;j<=n-i;j++)
+        {
+            ligne += " ";
+        }
+
+        /* Afficher chiffre jusqu'au milieu*/
+        for (int k=1; k<=i; k++) 
+        {
+            ligne += k;
+        }
+ 
+        /* Afficher a l'envers*/
+        for(int l=i-1; l>=1;l--) {
+            ligne += l;
+        }
+        Console.WriteLine(ligne);
+        ligne = "";
+    }
+  } 
+}
