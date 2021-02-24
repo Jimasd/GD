@@ -31,7 +31,7 @@ Test Data :
 Expected Output:
 April
 */
-using System;
+using System; /* Avec switch
 public class ExerciseCond3
 {
     public static void Main( )
@@ -65,6 +65,37 @@ public class ExerciseCond3
             default:
                 Console.WriteLine("Mettre un mois");
                 break;
+        }
+    }
+}
+
+using System; /* Avec else if */
+public class ExerciseCond3
+{
+    public static void Main( )
+    {   
+        int mois = System.Convert.ToInt32(System.Console.ReadLine());
+        
+        if (mois == 1)
+        {
+            Console.WriteLine("Janvier");
+        }
+        else if (mois == 2)
+        {
+            Console.WriteLine("Fevrier");
+        }
+        else if (mois == 3)
+        {
+            Console.WriteLine("Mars");
+        }
+        else if (mois == 4)
+        {
+            Console.WriteLine("Avril");
+        }
+        /* blah blah blah */
+        else
+        {
+            Console.WriteLine("Mettre un mois");
         }
     }
 }
