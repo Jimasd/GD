@@ -17,7 +17,6 @@ public class ExerciseArray4
         {
             arrayNouveau[j] = arrayAncien[j];
         }
-         System.Console.WriteLine("Write your code at here");
          
         /*Verifier que les deux array sont egal, element par element*/
         string message = "";
