@@ -119,3 +119,26 @@ public class LoopExercice36
     }
   } 
 }
+
+/*
+57. Write a program in C# Sharp to print a string in reverse order. Go to the editor
+Test Data :
+Input a string to reverse : Welcome
+Expected Output :
+Reversed string is: emocleW
+*/
+using System;
+public class LoopExercice36
+    {
+    public static void Main()
+        {
+        string line = Console.ReadLine();
+        string reverse = "";
+        
+        for(int i=line.Length-1; i>=0; i--)
+        {
+            reverse += line[i] ;
+        }
+        Console.WriteLine(reverse);
+    }
+}
