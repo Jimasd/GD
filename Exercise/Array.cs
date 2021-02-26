@@ -87,3 +87,70 @@ public class ExerciseArray11
         }
     }
 }
+
+/*
+25. Write a program in C# Sharp to find sum of rows an columns of a Matrix.Go to the editor
+Test Data :
+Input the size of the square matrix: 2
+Input elements in the first matrix:
+element - [0],[0] : 5
+element - [0],[1] : 6
+element - [1],[0] : 7
+element - [1],[1] : 8
+Expected Output :
+The First matrix is :
+The matrix is :
+5 6
+7 8
+The sum or rows and columns of the matrix is :
+5 6 11
+7 8 15
+
+12 14
+*/
+using System;
+
+public class ExerciseArray25
+{
+    public static void Main( )
+    {
+        /*Generer une matrice de taille n x n*/
+        int n = Convert.ToInt32(Console.ReadLine());
+        int[,] mat = new int[n, n];
+        Random rnd = new Random(); /* Intialiser un objet Random */
+
+        for (int rng=0; rng<n; rng++)
+        {
+            
+            for (int col=0; col<n; col++)
+            {
+                mat[rng, col] = rnd.Next(-10, 11); /* Donner un chiffre entre
+                -10 et 10 pour chaque element de la matrice */
+            }
+        }
+
+        /* Afficher somme de chaque rangee et colonne*/
+        for (int i=0; i<n; i++)
+        {
+            int sommeRng = 0;
+            int sommeCol = 0;
+            
+            for (int j=0; j<n; j++)
+            {
+                sommeRng += mat[i, j]; /* Somme de la rangee i */
+                sommeCol += mat[j, i]; /* Somme de la colonne j */
+            }
+            System.Console.WriteLine("Somme de la rangee " + i + ": " + sommeRng);
+            System.Console.WriteLine("Somme de la colonne " + i + ": " + sommeCol);
+        }
+        
+        /* Bonus: somme de tous les elements */
+        int somme = 0;
+        
+        foreach (int element in mat)
+        {
+            somme += element;
+        }
+        System.Console.WriteLine("Somme tous les elements: " + somme);
+    }
+}
