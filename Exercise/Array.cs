@@ -41,3 +41,49 @@ public class ExerciseArray4
         }
     }
 }
+
+/*
+11. Write a program in C# Sharp to sort elements of array in ascending order. Go to the editor
+Test Data :
+Input the size of array : 5
+Input 5 elements in the array :
+element - 0 : 2
+element - 1 : 7
+element - 2 : 4
+element - 3 : 5
+element - 4 : 9
+Expected Output :
+Elements of array in sorted ascending order:
+2 4 5 7 9
+*/
+public class ExerciseArray11
+{
+    public static void Main( )
+    {
+        int[] unsortedArray = {3, 4, 0, -1, 10, -2}; /* Array exemple */
+        int tmp;
+        
+        for (int i=0; i<unsortedArray.Length; i++)
+        {
+            
+            for (int j=i+1; j<unsortedArray.Length; j++)
+            {
+                
+                if (unsortedArray[j] < unsortedArray[i]) 
+                {
+                    /* Inverser le precendent avec le prochain si le premier
+                    est plus grand que l'autre */
+                    tmp = unsortedArray[i];
+                    unsortedArray[i] = unsortedArray[j];
+                    unsortedArray[j] = tmp;
+                }
+            }
+        }
+        
+        /*Montrer resultats du sorted array*/
+        foreach (int element in unsortedArray)
+        {
+            System.Console.WriteLine(element);
+        }
+    }
+}
