@@ -128,7 +128,7 @@ Expected Output :
 Reversed string is: emocleW
 */
 using System;
-public class LoopExercice36
+public class LoopExercice57
     {
     public static void Main()
         {
