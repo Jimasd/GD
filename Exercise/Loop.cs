@@ -91,12 +91,12 @@ using System;
 public class LoopExercice36
 {  
     public static void Main()
-{
-   int n = Convert.ToInt32(Console.ReadLine());
-   string ligne = "";
+    {
+    int n = Convert.ToInt32(Console.ReadLine());
+    string ligne = "";
    
-   for(int i=1;i<=n;i++)
-   {
+    for(int i=1;i<=n;i++)
+    {
        
         /* Mettre espaces blancs*/
         for(int j=1;j<=n-i;j++)
