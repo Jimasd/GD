@@ -10,7 +10,8 @@ public class ExerciseCond3
     {   
         int n = System.Convert.ToInt32(System.Console.ReadLine());
         
-        if (n > 0) {
+        if (n > 0) 
+        {
             System.Console.WriteLine("Positif");
         } 
         else if (n == 0)
