@@ -1,4 +1,30 @@
 /*
+1.Write a C# Sharp program to accept two integers and check whether they are equal or not.
+Test Data :
+Input 1st number: 5
+Input 2nd number: 5
+Expected Output :
+5 and 5 are equal
+*/
+public class Exercise1
+{
+    public static void Main( )
+    {
+        int x = System.Convert.ToInt32(System.Console.ReadLine());
+        int y = System.Convert.ToInt32(System.Console.ReadLine());
+       
+        if (x==y)
+        {
+            System.Console.WriteLine(x +" and "+ y +" are equal");
+           
+        }
+        else
+        {
+            System.Console.WriteLine(x +" and "+ y +" are not equal");
+        }
+    }
+}
+/*
 3. Write a C# Sharp program to check whether a given number is positive or negative. Go to the editor
 Test Data : 14
 Expected Output :
@@ -24,7 +50,42 @@ public class ExerciseCond3
         }
     }
 }
-
+/*
+9. Write a C# Sharp program to accept a coordinate point in an XY coordinate system and determine in which quadrant the coordinate point lies.
+Test Data :
+Input the value for X coordinate :7
+Input the value for Y coordinate :9
+Expected Output :
+The coordinate point (7,9) lies in the First quadrant.
+*/
+public class Exercise1
+{
+    public static void Main( )
+    {
+         int x = System.Convert.ToInt32(System.Console.ReadLine());
+         int y = System.Convert.ToInt32(System.Console.ReadLine());
+    if ( x> 0 && y > 0)
+    {
+        System.Console.WriteLine("The coordinate point (" + x + "," + y + ") lies in the First Qaudrant.");
+    }
+    else if (x < 0 && y >0)
+    {
+        System.Console.WriteLine( "The coordinate point (" + x + "," + y + ") lies in the Second Qaudrant.");
+    }
+    else if (x < 0 && y < 0)
+    {
+        System.Console.WriteLine( "The coordinate point (" + x + "," + y + ") lies in the Third Qaudrant.");
+    }
+    else if (x > 0 && y < 0)
+    {
+        System.Console.WriteLine( "The coordinate point (" + x + "," + y + ") lies in the Forth Qaudrant");   
+    }
+    else
+    {
+        System.Console.WriteLine( "The coordinate point (" + x + "," + y + ") lies in the middle");
+    }
+  }
+}
 /*
 22. Write a program in C# Sharp to read any Month Number in integer and display Month name in the word. Go to the editor
 Test Data :
