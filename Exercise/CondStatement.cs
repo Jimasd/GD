@@ -205,8 +205,7 @@ public class Exercise1
                 break ;
             case "F":
                 System.Console.WriteLine("Fail");
-                break ;
-            
+                break ; 
         }
     }
 }
