@@ -172,6 +172,45 @@ public class Exercise1 /*Laura*/
     }
 }
 /*
+19.Write a program in C# Sharp to accept a grade and declare the equivalent description :
+Grade	Description
+E	Excellent
+V	Very Good
+G	Good
+A	Average
+F	Fail
+Test Data :
+Input the grade :a
+Expected Output :
+You have chosen : Average
+*/
+public class Exercise1
+{
+    public static void Main( )
+    {
+        string grade = System.Console.ReadLine();
+        switch (grade)
+        {
+            case "E":
+                System.Console.WriteLine("Excellent");
+                break ;
+            case "V":
+                System.Console.WriteLine("Very Good");
+                break ;
+            case "G":
+                System.Console.WriteLine("Good");
+                break ;
+            case "A":
+                System.Console.WriteLine("Average");
+                break ;
+            case "F":
+                System.Console.WriteLine("Fail");
+                break ;
+            
+        }
+    }
+}
+/*
 22. Write a program in C# Sharp to read any Month Number in integer and display Month name in the word. Go to the editor
 Test Data :
 4
