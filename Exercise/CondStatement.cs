@@ -99,7 +99,7 @@ Test Data :
 Expected Output :
 Its very hot.
 */
-public class Exercise1
+public class Exercise1 // Amy
 {
     public static void Main( )
     {
@@ -130,6 +130,38 @@ public class Exercise1
          System.Console.WriteLine("Its Very Hot");
         }
     }
+}
+
+public class Exercise1 /*Laura*/
+{
+    public static void Main( )
+    {
+         int x = System.Convert.ToInt32(System.Console.ReadLine());
+         if (x<0)
+    {
+        System.Console.WriteLine ("Freezing weather");
+    }
+        else if (x>= 0 && x< 10)
+    {
+        System.Console.WriteLine ("Very Cold weather");
+    }   
+        else if ( x>= 10 && x< 20)
+    {
+        System.Console.WriteLine ("Cold weather");
+    }    
+        else if ( x>= 20 && x< 30)
+    {
+        System.Console.WriteLine ("Normal in Temp");
+    }   
+        else if ( x>= 30 && x<40)
+    {
+        System.Console.WriteLine ("Its Hot"); 
+    }   
+        else if ( x>= 40)
+    {
+        System.Console.WriteLine ("Its very Hot"); 
+    }   
+}
 }
 /*
 22. Write a program in C# Sharp to read any Month Number in integer and display Month name in the word. Go to the editor
