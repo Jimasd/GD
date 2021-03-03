@@ -103,23 +103,30 @@ public class Exercise1 // Amy
 {
     public static void Main( )
     {
-        int x = System.Convert.ToInt32(System.Console.ReadLine());
+        /*
+        int nomDeVariable = 123; //camelCase
         
-        if (x<0)
+        string nom_de_variable = "PAS BON";
+        string NomDe_Variable = "PAS BON";
+        */
+        
+        int temp = System.Convert.ToInt32(System.Console.ReadLine());
+        
+        if (temp<0)
         {
-         System.Console.WriteLine("Freezing weather");
+            System.Console.WriteLine("Freezing weather");
         }
-        else if (x>=0 && x<10)
+        else if (temp>=0 && temp<10)
         {
-         System.Console.WriteLine("Very Cold weather");
+            System.Console.WriteLine("Very Cold weather");
         }
         else if (x>=10 && x<20)
         {
-         System.Console.WriteLine("Cold weather");
+            System.Console.WriteLine("Cold weather");
         }
         else if (x>=20 && x<30)
         {
-         System.Console.WriteLine("Normal in Temp");
+            System.Console.WriteLine("Normal in Temp");
         }
         else if (x>=30 && x<40)
         {
@@ -127,7 +134,7 @@ public class Exercise1 // Amy
         }
         else if (x>=40)
         {
-         System.Console.WriteLine("Its Very Hot");
+            System.Console.WriteLine("Its Very Hot");
         }
     }
 }
@@ -136,32 +143,33 @@ public class Exercise1 /*Laura*/
 {
     public static void Main( )
     {
-         int x = System.Convert.ToInt32(System.Console.ReadLine());
-         if (x<0)
-    {
-        System.Console.WriteLine ("Freezing weather");
+        int tempDuBBT = System.Convert.ToInt32(System.Console.ReadLine());
+        
+        if (tempDuBBT<0)
+        {
+             System.Console.WriteLine ("Freezing weather");
+        }
+        else if (tempDuBBT>=0 && x<10)
+        {
+             System.Console.WriteLine ("Very Cold weather");
+        }   
+        else if (x>=10 && x<20)
+        {
+            System.Console.WriteLine ("Cold weather");
+        }    
+        else if (x>=20 && x<30)
+        {
+            System.Console.WriteLine ("Normal in Temp");
+        }   
+        else if (x>=30 && x<40)
+        {
+            System.Console.WriteLine ("Its Hot"); 
+        }   
+        else if (x>=40)
+        {
+            System.Console.WriteLine ("Its very Hot"); 
+        }   
     }
-        else if (x>= 0 && x< 10)
-    {
-        System.Console.WriteLine ("Very Cold weather");
-    }   
-        else if ( x>= 10 && x< 20)
-    {
-        System.Console.WriteLine ("Cold weather");
-    }    
-        else if ( x>= 20 && x< 30)
-    {
-        System.Console.WriteLine ("Normal in Temp");
-    }   
-        else if ( x>= 30 && x<40)
-    {
-        System.Console.WriteLine ("Its Hot"); 
-    }   
-        else if ( x>= 40)
-    {
-        System.Console.WriteLine ("Its very Hot"); 
-    }   
-}
 }
 /*
 22. Write a program in C# Sharp to read any Month Number in integer and display Month name in the word. Go to the editor
