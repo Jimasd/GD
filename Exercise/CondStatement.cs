@@ -87,6 +87,51 @@ public class Exercise1
   }
 }
 /*
+13. Write a C# Sharp program to read temperature in centigrade and display a suitable message according to temperature state below
+Temp < 0 then Freezing weather
+Temp 0-10 then Very Cold weather
+Temp 10-20 then Cold weather
+Temp 20-30 then Normal in Temp
+Temp 30-40 then Its Hot
+Temp >=40 then Its Very Hot
+Test Data :
+42
+Expected Output :
+Its very hot.
+*/
+public class Exercise1
+{
+    public static void Main( )
+    {
+        int x = System.Convert.ToInt32(System.Console.ReadLine());
+        
+        if (x<0)
+        {
+         System.Console.WriteLine("Freezing weather");
+        }
+        else if (x>=0 && x<10)
+        {
+         System.Console.WriteLine("Very Cold weather");
+        }
+        else if (x>=10 && x<20)
+        {
+         System.Console.WriteLine("Cold weather");
+        }
+        else if (x>=20 && x<30)
+        {
+         System.Console.WriteLine("Normal in Temp");
+        }
+        else if (x>=30 && x<40)
+        {
+         System.Console.WriteLine("Its Hot");
+        }
+        else if (x>=40)
+        {
+         System.Console.WriteLine("Its Very Hot");
+        }
+    }
+}
+/*
 22. Write a program in C# Sharp to read any Month Number in integer and display Month name in the word. Go to the editor
 Test Data :
 4
