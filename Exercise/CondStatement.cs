@@ -209,6 +209,32 @@ public class Exercise1
         }
     }
 }
+//Laura
+public class Exercise1
+{
+    public static void Main( )
+    {
+        char grade = char.Parse(System.Console.ReadLine());
+        switch (grade)
+        {
+            case 'E':
+                System.Console.WriteLine ("Excellent");
+                break;
+            case 'V':
+                System.Console.WriteLine ("Very Good");
+                break;
+            case 'G':
+                System.Console.WriteLine ("Good");
+                break;
+            case 'A':
+                System.Console.WriteLine ("Average");
+                break;
+            case 'F':     
+                System.Console.WriteLine ("Fail");
+                break;
+        }    
+    }
+}
 /*
 22. Write a program in C# Sharp to read any Month Number in integer and display Month name in the word. Go to the editor
 Test Data :
