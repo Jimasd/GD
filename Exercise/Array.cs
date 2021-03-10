@@ -154,3 +154,33 @@ public class ExerciseArray25
         System.Console.WriteLine("Somme tous les elements: " + somme);
     }
 }
+
+
+3. Write a program in C# Sharp to find the product of all elements of the array. Go to the editor
+Test Data :
+Input the number of elements to be stored in the array :3
+Input 3 elements in the array :
+element - 0 : 2
+element - 1 : 5
+element - 2 : 8
+Expected Output :
+Product of all elements stored in the array is : 15
+    
+public class Exercise1
+{
+    public static void Main( )
+    {
+        int longueurArray = System.Convert.ToInt32(System.Console.ReadLine()); // longueur du array
+        int [] arrayDepart = new int [longueurArray];
+        for (int i=0; i<longueurArray; i++) // pour remplir arrayDepart
+        {
+            arrayDepart[i] = System.Convert.ToInt32(System.Console.ReadLine()); // les elements seront input
+        } 
+        int produit = 1;
+        foreach (int element in arrayDepart)
+        {
+            produit *= element;
+        }
+        System.Console.WriteLine("Le produit de tous les elements: " + produit); 
+    }    
+}    
