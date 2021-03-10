@@ -184,3 +184,39 @@ public class Exercise1
         System.Console.WriteLine("Le produit de tous les elements: " + produit); 
     }    
 }    
+
+
+// mm chose ms pour la somme
+public class Exercise1
+{
+    public static void Main( )
+    {
+        int mystere =System.Convert.ToInt32(System.Console.ReadLine());
+        int supa = 0;
+
+        for (int i=0; i<mystere; i++)
+        {
+          supa += System.Convert.ToInt32(System.Console.ReadLine());
+        }
+        System.Console.WriteLine (supa);
+    }
+}
+
+public class Exercise1
+{
+    public static void Main( )
+    {
+        int longueurArray = System.Convert.ToInt32(System.Console.ReadLine());
+        int[] mystere = new int[longueurArray];
+        int supa = 0;
+
+        for (int i=0; i<mystere.Length; i++)
+        {
+          mystere[i] = System.Convert.ToInt32(System.Console.ReadLine());
+          supa += mystere[i];
+        }
+        System.Console.WriteLine (supa);
+
+    }
+}
+
