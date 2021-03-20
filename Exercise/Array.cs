@@ -232,6 +232,7 @@ element - 4 : 6
 Expected Output :
 The Second largest element in the array is: 6 */
 
+//Code de Laura
 using System;
 public class Exercise1
 {
@@ -243,3 +244,46 @@ public class Exercise1
 	    System.Console.WriteLine($"Second Highest Value In Array {array[1]}");
     }
 }
+
+//code d'amy 
+public class Exercise1 {     public s... par Amy Le (Invité)
+
+Amy Le (Invité)19:58
+public class Exercise1
+{
+    public static void Main( )
+    {
+        int[] array = { 2, 11, 15, 1, 7, 99, 6, 85, 4 };
+        System.Array.Sort(array);
+        System.Array.Reverse(array);
+        System.Console.WriteLine("Second Highest Value In Array " + array[1]);
+    }
+}
+			
+//avec lenght-2
+public class Exercise1
+{
+    public static void Main( )
+    {
+        int[] array = { 2, 11, 15, 1, 7, 99, 6, 85, 4 };
+        System.Array.Sort(array);
+
+        int number2 = array[array.Length-2];
+        System.Console.WriteLine($"Second Highest Value In Array {number2}");
+    }
+
+}	
+
+//la ligne 286 differente de 272			
+public class Exercise1
+{
+    public static void Main( )
+    {
+        int[] array = { 2, 11, 15, 1, 7, 99, 6, 85, 4 };
+        System.Array.Sort(array);
+
+        int number2 = array[array.Length-2];
+        System.Console.WriteLine($"Second Highest Value In Array {array[array.Length-2]}");
+    }
+
+}			
