@@ -220,3 +220,26 @@ public class Exercise1
     }
 }
 
+/*Write a program in C# Sharp to find the second largest element in an array. Go to the editor
+Test Data :
+Input the size of array : 5
+Input 5 elements in the array :
+element - 0 : 2
+element - 1 : 9
+element - 2 : 1
+element - 3 : 4
+element - 4 : 6
+Expected Output :
+The Second largest element in the array is: 6 */
+
+using System;
+public class Exercise1
+{
+    public static void Main( )
+    {
+	    int[] array = { 2, 11, 15, 1, 7, 99, 6, 85, 4 };
+	    Array.Sort(array); //sorting array.
+	    Array.Reverse(array); // Reverse Sorting array value.
+	    System.Console.WriteLine($"Second Highest Value In Array {array[1]}");
+    }
+}
