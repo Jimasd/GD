@@ -346,7 +346,9 @@ public class Solution {
                 {
                     somme += mat[i][j];
                 }
-                else if (i+j == mat.Length-1) //2e diagonale
+                else if (i+j == mat.Length-1)
+		//2e diagonale. Si la matrice est impaire, 
+		//l'element du milieu va etre skipper pcq c deja inclut dans le premiere diagonale
                 {
                     somme += mat[i][j];
                 }
