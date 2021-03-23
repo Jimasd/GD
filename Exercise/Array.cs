@@ -357,3 +357,73 @@ public class Solution {
         return somme;
     }
 }
+
+/*18. Write a program in C# Sharp for a 2D array of size 3x3 and print the matrix. Go to the editor
+Test Data :
+Input elements in the matrix :
+element - [0],[0] : 1
+element - [0],[1] : 2
+element - [0],[2] : 3
+element - [1],[0] : 4
+element - [1],[1] : 5
+element - [1],[2] : 6
+element - [2],[0] : 7
+element - [2],[1] : 8
+element - [2],[2] : 9
+Expected Output :
+The matrix is :
+
+1 2 3
+4 5 6
+7 8 9	*/
+
+//code de laura
+public class Exercise1
+{
+    public static void Main( )
+    {
+        string line = "";
+        int [][] mat = new int[3][]
+        { 
+            new int[] {1,2,3},
+            new int[] {4,5,6},
+            new int[] {7,8,9}
+        };
+         
+            for (int i=0; i<= mat.Length-1; i++)
+            {
+                //System.Console.WriteLine (i);
+                for (int j= 0; j<= mat.Length-1; j++)
+                {
+                line += mat [i][j] + ","; 
+                }
+                System.Console.WriteLine (line);
+                line = "";
+                }
+    }            
+}			
+
+//code Amy
+public class Exercise1
+{
+    public static void Main( )
+    {
+        string somme = "";
+        int [][] mat = new int[3][]
+        {
+            new int[] {1,2,3},
+            new int[] {4,5,6},
+            new int[] {7,8,9}
+        };
+
+         for (int i=0; i<=2; i++)
+         {
+             for (int j=0; j<=2; j++)
+             {
+                somme += mat[i][j] + " ";
+             }
+             System.Console.WriteLine(somme);
+             somme = "";
+         }
+    }
+}
